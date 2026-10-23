@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CV — Patcharapon Srisuwan</title>
-<meta name="description" content="Curriculum vitae of Patcharapon Srisuwan, CEDT student at Chulalongkorn University." />
+<meta name="description" content="Curriculum vitae of Patcharapon Srisuwan, third-year CEDT student at Chulalongkorn University." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -15,61 +15,59 @@
     --accent: #2563eb;
     --accent-2: #0ea5e9;
     --line: #dde4ef;
-    --soft: #eff4ff;
     --bg: #e9eef6;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   @page { size: A4; margin: 0; }
   html, body { background: var(--bg); }
-  body { font-family: "Inter", system-ui, sans-serif; color: var(--text); font-size: 9.6pt; line-height: 1.45; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Inter", system-ui, sans-serif; color: var(--text); font-size: 9pt; line-height: 1.4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   a { color: inherit; text-decoration: none; }
 
   .toolbar { display: flex; justify-content: center; gap: 10px; padding: 18px 16px 0; }
-  .toolbar a, .toolbar button { font: 600 14px "Inter", sans-serif; padding: 10px 18px; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--text); cursor: pointer; }
+  .toolbar a { font: 600 14px "Inter", sans-serif; padding: 10px 18px; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--text); }
   .toolbar .primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; border-color: transparent; }
 
   .page { width: 210mm; height: 297mm; margin: 18px auto 40px; background: #fff; box-shadow: 0 20px 50px -20px rgba(15,23,42,.35);
-    display: grid; grid-template-columns: 64mm 1fr; overflow: hidden; }
+    display: grid; grid-template-columns: 63mm 1fr; overflow: hidden; }
 
   /* Sidebar */
-  aside { background: #0f172a; color: #e6ecf7; padding: 15mm 8mm 12mm 9mm; position: relative; }
-  aside::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4mm; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
-  .mark { width: 15mm; height: 15mm; border-radius: 4mm; display: grid; place-items: center; font-weight: 800; font-size: 15pt; color: #fff;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2)); margin-bottom: 7mm; }
-  aside h3 { font-size: 8pt; letter-spacing: .14em; text-transform: uppercase; color: #7fb0ff; margin: 7mm 0 3mm; font-weight: 700; }
+  aside { background: #0f172a; color: #e6ecf7; padding: 13mm 7mm 10mm 8.5mm; position: relative; }
+  aside::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3.5mm; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+  .mark { width: 13mm; height: 13mm; border-radius: 3.5mm; display: grid; place-items: center; font-weight: 800; font-size: 13pt; color: #fff;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)); margin-bottom: 6mm; }
+  aside h3 { font-size: 7.6pt; letter-spacing: .14em; text-transform: uppercase; color: #7fb0ff; margin: 5.5mm 0 2.6mm; font-weight: 700; }
   aside h3:first-of-type { margin-top: 0; }
-  .contact li { list-style: none; display: grid; grid-template-columns: 4.2mm 1fr; gap: 2.2mm; align-items: start; margin-bottom: 2.6mm; font-size: 8.4pt; word-break: break-word; }
-  .contact svg { width: 3.6mm; height: 3.6mm; margin-top: .5mm; color: #7fb0ff; }
-  .skill-group { margin-bottom: 3.6mm; }
-  .skill-group b { display: block; font-size: 8.4pt; color: #fff; margin-bottom: 1.4mm; }
-  .chips { display: flex; flex-wrap: wrap; gap: 1.4mm; }
-  .chips span { font-size: 7.6pt; padding: .7mm 2mm; border-radius: 1.6mm; background: rgba(127,176,255,.14); color: #dbe7ff; }
-  .focus { list-style: none; display: grid; gap: 2.4mm; }
-  .focus li { font-size: 8pt; color: #b8c4dc; line-height: 1.4; padding-left: 3mm; border-left: .5mm solid #3b82f6; }
-  .focus li b { display: block; color: #fff; font-size: 8.4pt; }
-  .langs li { list-style: none; display: flex; justify-content: space-between; font-size: 8.4pt; margin-bottom: 1.6mm; }
-  .langs li span { color: #93a1bd; }
+  .contact li { list-style: none; display: grid; grid-template-columns: 4mm 1fr; gap: 2mm; align-items: start; margin-bottom: 2.1mm; font-size: 8pt; word-break: break-word; }
+  .contact svg { width: 3.4mm; height: 3.4mm; margin-top: .4mm; color: #7fb0ff; }
+  .edu b { display: block; font-size: 8.6pt; color: #fff; }
+  .edu p { font-size: 7.9pt; color: #b8c4dc; margin-top: .6mm; }
+  .skill-group { margin-bottom: 2.8mm; }
+  .skill-group b { display: block; font-size: 8pt; color: #fff; margin-bottom: 1.2mm; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1.2mm; }
+  .chips span { font-size: 7.2pt; padding: .55mm 1.8mm; border-radius: 1.5mm; background: rgba(127,176,255,.14); color: #dbe7ff; }
+  .acts { list-style: none; display: grid; gap: 1.9mm; }
+  .acts li { font-size: 7.8pt; color: #b8c4dc; line-height: 1.35; padding-left: 2.6mm; border-left: .5mm solid #3b82f6; }
+  .acts li b { display: block; color: #fff; font-size: 8pt; font-weight: 600; }
 
   /* Main */
-  main { padding: 14mm 12mm 11mm 11mm; }
-  header h1 { font-size: 23pt; font-weight: 800; letter-spacing: -.02em; line-height: 1.05; }
+  main { padding: 12mm 11mm 9mm 10mm; }
+  header h1 { font-size: 21pt; font-weight: 800; letter-spacing: -.02em; line-height: 1.05; }
   header h1 span { color: var(--accent); }
-  header .role { font-size: 10.5pt; font-weight: 600; color: var(--accent); margin: 2mm 0 3.5mm; }
-  header p { color: var(--muted); font-size: 9.2pt; }
-  section { margin-top: 5.5mm; }
-  h2 { display: flex; align-items: center; gap: 2.5mm; font-size: 9pt; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--text); margin-bottom: 3mm; }
+  header .role { font-size: 10pt; font-weight: 600; color: var(--accent); margin: 1.6mm 0 2.8mm; }
+  header p { color: var(--muted); font-size: 8.8pt; }
+  section { margin-top: 4.4mm; }
+  h2 { display: flex; align-items: center; gap: 2.5mm; font-size: 8.6pt; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin-bottom: 2.4mm; }
   h2::after { content: ""; flex: 1; height: .3mm; background: var(--line); }
-  .item { margin-bottom: 3.6mm; }
+  .item { margin-bottom: 3mm; }
   .item:last-child { margin-bottom: 0; }
   .item-top { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
-  .item-top h4 { font-size: 10pt; font-weight: 700; }
+  .item-top h4 { font-size: 9.6pt; font-weight: 700; }
   .item-top h4 .org { color: var(--accent); }
-  .date { flex: none; font-size: 8.2pt; color: var(--muted); font-weight: 500; }
-  .sub { font-size: 8.6pt; color: var(--muted); margin: .4mm 0 1.4mm; }
-  ul.b { list-style: none; display: grid; gap: .9mm; }
-  ul.b li { position: relative; padding-left: 3.6mm; font-size: 8.9pt; }
-  ul.b li::before { content: ""; position: absolute; left: .4mm; top: 1.9mm; width: 1.3mm; height: 1.3mm; border-radius: .3mm; background: var(--accent); transform: rotate(45deg); }
-  .tagline { margin-top: 1.4mm; font-size: 7.8pt; color: var(--accent); font-weight: 600; }
+  .date { flex: none; font-size: 7.9pt; color: var(--muted); font-weight: 500; }
+  .sub { font-size: 8.3pt; color: var(--muted); margin: .3mm 0 1.2mm; }
+  ul.b { list-style: none; display: grid; gap: .7mm; }
+  ul.b li { position: relative; padding-left: 3.4mm; font-size: 8.6pt; }
+  ul.b li::before { content: ""; position: absolute; left: .4mm; top: 1.75mm; width: 1.2mm; height: 1.2mm; border-radius: .3mm; background: var(--accent); transform: rotate(45deg); }
 
   @media print {
     html, body { background: #fff; }
@@ -94,7 +92,7 @@
   <symbol id="c-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm18 2-10 7L2 6"/></symbol>
   <symbol id="c-web" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
   <symbol id="c-in" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></symbol>
-  <symbol id="c-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="c-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.770 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
   <symbol id="c-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Zm0-9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></symbol>
 </svg>
 
@@ -111,56 +109,70 @@
       <li><svg><use href="#c-pin"/></svg><span>Bangkok, Thailand</span></li>
     </ul>
 
+    <h3>Education</h3>
+    <div class="edu">
+      <b>Chulalongkorn University</b>
+      <p>B.Eng. Computer Engineering and Digital Technology (CEDT)</p>
+      <p>2024 – Present · Third-year student</p>
+    </div>
+
     <h3>Skills</h3>
-    <div class="skill-group"><b>Engineering</b>
-      <div class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQL</span><span>TypeScript</span><span>JavaScript</span><span>React</span><span>Tailwind CSS</span><span>REST APIs</span><span>C</span></div>
+    <div class="skill-group"><b>Data &amp; Analytics</b>
+      <div class="chips"><span>Python (pandas)</span><span>SQL / PostgreSQL</span><span>Tableau</span><span>Regression</span><span>Correlation Analysis</span><span>Market Basket Analysis</span><span>Machine Learning</span><span>NLP</span><span>GeoPandas</span><span>Folium</span></div>
     </div>
-    <div class="skill-group"><b>Data &amp; Business</b>
-      <div class="chips"><span>Tableau</span><span>pandas</span><span>Streamlit</span><span>Jupyter</span><span>Excel</span><span>Data Visualization</span><span>Clustering</span><span>Business Analysis</span><span>Market Research</span></div>
+    <div class="skill-group"><b>Business</b>
+      <div class="chips"><span>Requirement Gathering</span><span>Business Case Analysis</span><span>Financial Statement Analysis</span><span>Presentation</span><span>E-commerce</span></div>
     </div>
-    <div class="skill-group"><b>Quality &amp; Tools</b>
-      <div class="chips"><span>Playwright</span><span>Robot Framework</span><span>Bruno</span><span>Git</span><span>GitHub Actions</span><span>Render</span><span>Vercel</span></div>
+    <div class="skill-group"><b>Development</b>
+      <div class="chips"><span>FastAPI</span><span>Streamlit</span><span>React</span><span>Next.js</span><span>Express.js</span><span>LINE Messaging API</span><span>Git</span><span>CI/CD</span></div>
     </div>
 
-
-    <h3>Strengths</h3>
-    <ul class="focus">
-      <li><b>Fast learner</b>Picked up Tableau for client work in about 1.5 weeks</li>
-      <li><b>Clear communicator</b>Presented to clients and to central bank directors</li>
-      <li><b>Business sense</b>Grew up around a family business; builds tools for real operations</li>
+    <h3>Leadership &amp; Activities</h3>
+    <ul class="acts">
+      <li><b>Shopee Case Competition 2026</b>Participant</li>
+      <li><b>TACC 2026</b>Participant</li>
+      <li><b>ICPC Asia Bangkok Regional 2025</b>Head of Welfare</li>
+      <li><b>CEDT Guild Building 2025</b>Guild Master</li>
+      <li><b>CEDT Innovation Summit 2025</b>Head of Welfare</li>
+      <li><b>CEDT Ovenbreak 2025</b>Welfare Staff</li>
+      <li><b>Intania Games 2024</b>Coordinator</li>
     </ul>
-
   </aside>
 
   <main>
     <header>
       <h1>Patcharapon <span>Srisuwan</span></h1>
-      <div class="role">Full-stack Developer · Business &amp; Data Analyst</div>
-      <p>Computer Engineering and Digital Technology student at Chulalongkorn University who works where software meets business. I start from real operational problems and build the software or analysis that fixes them, with internship experience at the Bank of Thailand and The Red Carbon.</p>
+      <div class="role">Business &amp; Data Analyst · Full-stack Developer</div>
+      <p>Third-year Computer Engineering student who combines business analysis, data analysis and hands-on software development. Analyzed national card-payment data at the Bank of Thailand, gathered client requirements and built Tableau dashboards at The Red Carbon, and runs an online store backed by a self-built order-management system.</p>
     </header>
 
     <section>
       <h2>Experience</h2>
       <div class="item">
         <div class="item-top"><h4>Data Analyst Intern · <span class="org">Bank of Thailand</span></h4><span class="date">Jun – Jul 2026</span></div>
-        <div class="sub">Data Team, Payment Systems and FinTech Department · Bangkok</div>
+        <div class="sub">Payment Systems &amp; FinTech Department, Data Team</div>
         <ul class="b">
-          <li>Assessed the data quality of the team's datasets and presented the findings</li>
-          <li>Analyzed payment data to find insights and presented the results to the team</li>
-          <li>Fast-Indicator: used correlation analysis to test whether payment data could serve as an early economic indicator</li>
-          <li>Clustered Thai provinces by credit and debit card usage to find groups with similar payment behavior, improving the model over several rounds</li>
-          <li>Presented all three projects to the department's director and senior director</li>
+          <li>Analyzed nationwide credit and debit card usage data to uncover insights into payment behavior</li>
+          <li>Tested card spending as a fast economic indicator by analyzing its correlation with GDP</li>
+          <li>Clustered Thai provinces by card usage to find groups with similar payment behavior</li>
+          <li>Presented findings and recommendations to department directors</li>
         </ul>
       </div>
       <div class="item">
-        <div class="item-top"><h4>Business Analyst Intern · <span class="org">The Red Carbon</span></h4><span class="date">May – Aug 2025</span></div>
-        <div class="sub">Business Team, data-driven marketing and BI consultancy · Bangkok</div>
+        <div class="item-top"><h4>Business Analyst Intern · <span class="org">The Red Carbon Co., Ltd.</span></h4><span class="date">May – Aug 2025</span></div>
+        <ul class="b" style="margin-top:1.2mm">
+          <li>Gathered and documented business requirements from clients</li>
+          <li>Analyzed business data and built Tableau dashboards to support client decisions</li>
+          <li>Co-wrote a client Half-Year Report turning multi-source marketing data into trends and recommendations</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item-top"><h4>Owner · <span class="org">Online Motorcycle Parts Store</span></h4><span class="date">May 2024 – Present</span></div>
+        <div class="sub">E-commerce Manager · Shopee, Lazada, TikTok Shop</div>
         <ul class="b">
-          <li>Built and improved Tableau dashboards for client projects, learning Tableau in about 1.5 weeks on top of SQL</li>
-          <li>Co-wrote a client Half-Year Report that combined marketing data from multiple sources into trends and strategic recommendations</li>
-          <li>Gathered and analyzed business requirements in client meetings at project kickoff</li>
-          <li>Researched customer needs and pain points across product categories, and made pitch decks for business pitches</li>
-          <li>Joined client consulting sessions to give data-driven advice</li>
+          <li>Run an online shop across Shopee, Lazada and TikTok Shop</li>
+          <li>Manage the store's marketing campaigns</li>
+          <li>Built MTMS, an in-house FastAPI + PostgreSQL system that merges orders from all three platforms to generate daily order and shipping reports</li>
         </ul>
       </div>
     </section>
@@ -168,29 +180,32 @@
     <section>
       <h2>Projects</h2>
       <div class="item">
-        <div class="item-top"><h4>MTMS: Management &amp; Trading System</h4><span class="date">Personal project · Ongoing</span></div>
-        <ul class="b">
-          <li>Full-stack web system for a multi-platform auto-parts e-commerce business, grown from a Streamlit prototype</li>
-          <li>FastAPI + PostgreSQL backend for daily sales reports, price management, PDF quotations, SKUs and delivery route planning</li>
-          <li>React + TypeScript frontend; deployed on Render and Vercel</li>
+        <div class="item-top"><h4>Cocoa Supply Chain Databank · <span class="org">Senior Capstone</span></h4><span class="date">Jul 2026 – Present</span></div>
+        <ul class="b" style="margin-top:1.2mm">
+          <li>Adding a LINE OA AI chatbot (FastAPI, LiteLLM) so cocoa farmers can submit supply-chain data by chat</li>
+          <li>Manage the product backlog, data management and CI/CD pipeline across Next.js, Kotlin, Go and Flutter services</li>
+          <li>Preparing the team's pitch for the STEM Learning in Action Grant 2026</li>
         </ul>
-        <div class="tagline">FastAPI · React · TypeScript · PostgreSQL · pandas</div>
       </div>
       <div class="item">
-        <div class="item-top"><h4>Sales Visualization</h4><span class="date">github.com/Rirhcceez</span></div>
-        <ul class="b"><li>Explored and visualized sales data in Python and Jupyter, with an interactive Streamlit dashboard</li></ul>
+        <div class="item-top"><h4>E-commerce Sales Analysis</h4><span class="date">Oct – Nov 2025</span></div>
+        <ul class="b" style="margin-top:1.2mm">
+          <li>Ran market basket analysis and SKU trend tracking in Python on Lazada and TikTok sales data to find product bundles and demand shifts</li>
+        </ul>
       </div>
       <div class="item">
-        <div class="item-top"><h4>Software Testing &amp; Automation</h4><span class="date">Coursework</span></div>
-        <ul class="b"><li>Automated UI and API tests with Playwright, Robot Framework and Bruno</li></ul>
+        <div class="item-top"><h4>Bangkok Flood Risk Forecasting</h4><span class="date">Oct – Dec 2025</span></div>
+        <ul class="b" style="margin-top:1.2mm">
+          <li>Analyzed three years (2022–2024) of Bangkok Traffy Fondue complaints in Jupyter: report trends, tag frequency and seasonal flood peaks</li>
+          <li>Found roads, drains and canals to be the issues most often reported with flooding, and measured how long flood reports take to resolve</li>
+          <li>Mapped flood reports by subdistrict with choropleth and time-series heatmaps (GeoPandas, Folium); the notebooks became the Data Insight page of the team's Streamlit dashboard</li>
+        </ul>
       </div>
-    </section>
-
-    <section>
-      <h2>Education</h2>
       <div class="item">
-        <div class="item-top"><h4>Chulalongkorn University</h4><span class="date">2024 – Present</span></div>
-        <div class="sub" style="margin-bottom:0">B.Eng. Computer Engineering and Digital Technology (CEDT), Faculty of Engineering</div>
+        <div class="item-top"><h4>TACC 2026 · <span class="org">SCGJWD</span></h4><span class="date">2026</span></div>
+        <ul class="b" style="margin-top:1.2mm">
+          <li>Assessed SCGJWD's financial performance and logistics strategy through financial statement analysis</li>
+        </ul>
       </div>
     </section>
   </main>

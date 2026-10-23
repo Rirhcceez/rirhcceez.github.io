@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Patcharapon Srisuwan</title>
-<meta name="description" content="Patcharapon Srisuwan — CEDT student at Chulalongkorn University. Full-stack developer and analyst building software where engineering meets business." />
+<meta name="description" content="Patcharapon Srisuwan — third-year CEDT student at Chulalongkorn University. Business analysis, data analysis and full-stack development; owner of an online motorcycle parts store." />
 <meta property="og:title" content="Patcharapon Srisuwan — Dev × Business" />
 <meta property="og:description" content="Full-stack developer and analyst building software that solves business problems." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EPS%3C/text%3E%3C/svg%3E" />
@@ -244,7 +244,12 @@
   .mock-rows { margin-top: 10px; display: grid; gap: 6px; } .mock-rows div { height: 8px; border-radius: 4px; background: #e2e8f0; }
 
   /* Skills */
-  .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .skills, .acts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .act-list { list-style: none; display: grid; gap: 12px; }
+  .act-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .act-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .act-list b { font-size: 15px; font-weight: 600; }
+  .act-list span { flex: none; font-size: 13px; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 3px 10px; border-radius: 999px; }
   .s-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 26px; }
   .s-card h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; margin-bottom: 18px; }
   .s-card h3 .ico { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
@@ -284,7 +289,6 @@
   @media (max-width: 960px) {
     .hero-grid, .about-grid, .p-card.featured { grid-template-columns: 1fr; }
     .code-card { transform: none; }
-    .skills { grid-template-columns: 1fr 1fr; }
     .stats { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 760px) {
@@ -293,7 +297,8 @@
     .nav-links.open { transform: none; }
     .nav-links a { display: block; padding: 12px; }
     .menu-btn { display: grid; }
-    .projects, .skills { grid-template-columns: 1fr; }
+    .projects, .skills, .acts { grid-template-columns: 1fr; }
+    .act-list li { flex-direction: column; gap: 6px; }
     section.block { padding: 80px 0; }
     .t-item { padding-left: 0; } .t-dot, .timeline::before { display: none; }
     .t-card { padding: 22px; }
@@ -331,6 +336,11 @@
   <symbol id="i-sun" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
   <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></symbol>
   <symbol id="i-file" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm0 0v6h6M12 18v-6m-3 3 3 3 3-3"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 7H6M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10ZM8 9h8M8 13h5"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3Zm0 0v15m6-12v15"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M7 16V11m4 5V7m4 9v-6m4 6V5"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 21h8m-4-4v4M7 4h10v5a5 5 0 0 1-10 0V4Zm0 2H4a3 3 0 0 0 3 4m10-4h3a3 3 0 0 1-3 4"/></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18"/></symbol>
 </svg>
 
@@ -342,6 +352,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#activities">Activities</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
@@ -363,7 +374,7 @@
         <span class="badge"><span class="dot"></span>Open to internships &amp; projects</span>
         <h1>Hi, I'm <span class="grad">Patcharapon</span><br />Srisuwan.</h1>
         <div class="role">I work as a <span class="typed" id="typed"></span><span class="caret"></span></div>
-        <p class="lead">CEDT student at Chulalongkorn University. I build software where <strong>engineering meets business</strong>, turning messy data and day-to-day operations into tools people actually use.</p>
+        <p class="lead">Third-year CEDT student at Chulalongkorn University. I combine <strong>business analysis, data analysis and hands-on software development</strong>, and I run my own online store on a system I built for it.</p>
         <div class="btns">
           <a class="btn btn-primary" href="#projects">View my work <svg><use href="#i-down"/></svg></a>
           <a class="btn btn-ghost" href="cv.html"><svg><use href="#i-file"/></svg>View CV</a>
@@ -390,9 +401,9 @@
   <div class="container">
     <div class="stats reveal">
       <div class="stat"><b data-count="2">0</b><span>Internships</span></div>
-      <div class="stat"><b data-count="300" data-suffix="+">0</b><span>GitHub contributions</span></div>
-      <div class="stat"><b data-count="3">0</b><span>Data projects at BOT</span></div>
-      <div class="stat"><b>Dev × Biz</b><span>CEDT @ Chula</span></div>
+      <div class="stat"><b data-count="3">0</b><span>Marketplaces my store sells on</span></div>
+      <div class="stat"><b data-count="7">0</b><span>Projects</span></div>
+      <div class="stat"><b>Year 3</b><span>CEDT @ Chula</span></div>
     </div>
   </div>
 
@@ -405,14 +416,14 @@
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a <strong>Computer Engineering and Digital Technology (CEDT)</strong> student at <strong>Chulalongkorn University</strong>. I grew up around my family's business, so I've always cared about the problems behind the code: how orders come in, how prices are set and how reports get made.</p>
-          <p>That shaped how I work. I like starting from a real operational problem, understanding the business, then building the software or analysis that fixes it. I've done that as a <strong>Business Analyst at The Red Carbon</strong>, a <strong>Data Analyst at the Bank of Thailand</strong>, and in <strong>MTMS</strong>, the full-stack system I'm building for a multi-platform e-commerce business.</p>
-          <p>I'm looking for internships and projects in software development, data, or business technology.</p>
+          <p>I'm a third-year <strong>Computer Engineering and Digital Technology (CEDT)</strong> student at <strong>Chulalongkorn University</strong>, working where business, data and software meet.</p>
+          <p>Since 2024 I've run an <strong>online motorcycle parts store</strong> on Shopee, Lazada and TikTok Shop. To keep up with orders, I built <strong>MTMS</strong>, an in-house system that merges orders from all three platforms into daily order and shipping reports. Running a real business is why I care about the problems behind the code.</p>
+          <p>I've brought the same mindset to internships as a <strong>Data Analyst at the Bank of Thailand</strong> and a <strong>Business Analyst at The Red Carbon</strong>, and to case competitions such as the Shopee Case Competition and TACC.</p>
         </div>
         <div class="pillars">
-          <div class="pillar reveal"><div class="ico"><svg><use href="#i-code"/></svg></div><div><h3>Build</h3><p>Full-stack web apps and REST APIs with FastAPI, React, TypeScript and PostgreSQL.</p></div></div>
-          <div class="pillar reveal"><div class="ico"><svg><use href="#i-chart"/></svg></div><div><h3>Analyze</h3><p>Data quality checks, correlation analysis, clustering and dashboards that support decisions.</p></div></div>
-          <div class="pillar reveal"><div class="ico"><svg><use href="#i-users"/></svg></div><div><h3>Advise</h3><p>Gather requirements, run market research and present clear recommendations to clients and leaders.</p></div></div>
+          <div class="pillar reveal"><div class="ico"><svg><use href="#i-code"/></svg></div><div><h3>Build</h3><p>Full-stack apps, APIs and chatbots with FastAPI, React, Next.js, PostgreSQL and the LINE Messaging API.</p></div></div>
+          <div class="pillar reveal"><div class="ico"><svg><use href="#i-chart"/></svg></div><div><h3>Analyze</h3><p>Correlation, regression, clustering, market basket analysis and geospatial visualization.</p></div></div>
+          <div class="pillar reveal"><div class="ico"><svg><use href="#i-users"/></svg></div><div><h3>Advise</h3><p>Requirement gathering, business cases, financial statement analysis and presentations to leaders.</p></div></div>
         </div>
       </div>
     </div>
@@ -424,45 +435,50 @@
       <div class="head reveal">
         <div class="eyebrow">Experience</div>
         <h2 class="title">Where I've worked</h2>
-        <p class="subtitle">Two internships on the business and data side, plus a full-stack system I build and maintain myself.</p>
+        <p class="subtitle">My own e-commerce business, plus two internships on the data and business side.</p>
       </div>
       <div class="timeline">
         <div class="t-item reveal">
+          <div class="t-dot"><svg><use href="#i-cart"/></svg></div>
+          <article class="t-card">
+            <div class="t-top"><h3>Owner · <span class="org">Online Motorcycle Parts Store</span></h3><span class="t-meta">May 2024 – Present</span></div>
+            <p class="t-desc">E-commerce manager for my own store on Shopee, Lazada and TikTok Shop.</p>
+            <ul>
+              <li>Run an online shop across Shopee, Lazada and TikTok Shop</li>
+              <li>Manage the store's marketing campaigns</li>
+              <li>Built MTMS, an in-house FastAPI + PostgreSQL system that merges orders from all three platforms to generate daily order and shipping reports</li>
+              <li>Analyze the store's sales data to find product bundles and shifts in demand</li>
+            </ul>
+            <div class="tags"><span class="tag">E-commerce</span><span class="tag">Shopee</span><span class="tag">Lazada</span><span class="tag">TikTok Shop</span><span class="tag">Marketing</span><span class="tag">FastAPI</span></div>
+          </article>
+        </div>
+        <div class="t-item reveal">
           <div class="t-dot"><svg><use href="#i-bank"/></svg></div>
           <article class="t-card">
-            <div class="t-top"><h3>Data Analyst Intern · <span class="org">Bank of Thailand</span></h3><span class="t-meta">Jun – Jul 2026 · Bangkok · Hybrid</span></div>
-            <p class="t-desc">Data Team, Payment Systems and FinTech Department. I analyzed payment data to support the central bank's work.</p>
+            <div class="t-top"><h3>Data Analyst Intern · <span class="org">Bank of Thailand</span></h3><span class="t-meta">Jun – Jul 2026 · Bangkok</span></div>
+            <p class="t-desc">Data Team, Payment Systems and FinTech Department.</p>
             <ul>
-              <li>Assessed the data quality of the team's datasets and presented the findings</li>
-              <li>Analyzed payment data to find insights and presented the results to the team</li>
-              <li>Fast-Indicator: used correlation analysis to test whether payment data could serve as an early economic indicator</li>
-              <li>Clustered Thai provinces by credit and debit card usage to find groups with similar payment behavior, and improved the model over several rounds</li>
-              <li>Presented all three projects to the department's director and senior director</li>
+              <li>Analyzed nationwide credit and debit card usage data to uncover insights into payment behavior</li>
+              <li>Checked the quality of the datasets before analysis</li>
+              <li>Tested card spending as a fast economic indicator by analyzing its correlation with GDP</li>
+              <li>Clustered Thai provinces by card usage to find groups with similar payment behavior</li>
+              <li>Presented findings and recommendations to department directors</li>
             </ul>
-            <div class="tags"><span class="tag">Data Analysis</span><span class="tag">Data Quality</span><span class="tag">Correlation</span><span class="tag">Clustering</span><span class="tag">Presentation</span></div>
+            <div class="tags"><span class="tag">Data Analysis</span><span class="tag">Correlation</span><span class="tag">Clustering</span><span class="tag">Economic Indicators</span><span class="tag">Presentation</span></div>
           </article>
         </div>
         <div class="t-item reveal">
           <div class="t-dot"><svg><use href="#i-brief"/></svg></div>
           <article class="t-card">
-            <div class="t-top"><h3>Business Analyst Intern · <span class="org">The Red Carbon</span></h3><span class="t-meta">May – Aug 2025 · Bangkok · Hybrid</span></div>
-            <p class="t-desc">Business Team at a data-driven marketing and business intelligence consultancy, turning data into insights that help clients make strategic decisions.</p>
+            <div class="t-top"><h3>Business Analyst Intern · <span class="org">The Red Carbon Co., Ltd.</span></h3><span class="t-meta">May – Aug 2025 · Bangkok</span></div>
+            <p class="t-desc">Business Team at a data-driven marketing and business intelligence consultancy.</p>
             <ul>
-              <li>Built and improved Tableau dashboards for client projects. I learned Tableau in about 1.5 weeks, building on what I knew from SQL</li>
-              <li>Co-wrote a client Half-Year Report that combined marketing data from multiple sources into key trends and strategic recommendations</li>
-              <li>Joined client meetings at project kickoff to gather and analyze business requirements</li>
-              <li>Researched customer needs and pain points across product categories to support business pitches</li>
-              <li>Made pitch decks and joined client consulting sessions to give data-driven advice</li>
+              <li>Gathered and documented business requirements from clients</li>
+              <li>Analyzed business data and built Tableau dashboards to support client decisions</li>
+              <li>Co-wrote a client Half-Year Report that turned marketing data from several sources into trends and recommendations</li>
+              <li>Researched customer needs and made pitch decks for business pitches</li>
             </ul>
-            <div class="tags"><span class="tag">Tableau</span><span class="tag">SQL</span><span class="tag">Business Analysis</span><span class="tag">Market Research</span><span class="tag">Consulting</span></div>
-          </article>
-        </div>
-        <div class="t-item reveal">
-          <div class="t-dot"><svg><use href="#i-rocket"/></svg></div>
-          <article class="t-card">
-            <div class="t-top"><h3>Full-stack Developer · <span class="org">MTMS (personal project)</span></h3><span class="t-meta">Ongoing</span></div>
-            <p class="t-desc">A management and trading system for an auto-parts business that sells on several e-commerce platforms. It started as a Streamlit prototype and is now a full web app.</p>
-            <div class="tags"><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">pandas</span></div>
+            <div class="tags"><span class="tag">Tableau</span><span class="tag">SQL</span><span class="tag">Requirement Gathering</span><span class="tag">Market Research</span><span class="tag">Consulting</span></div>
           </article>
         </div>
       </div>
@@ -475,24 +491,25 @@
       <div class="head reveal">
         <div class="eyebrow">Projects</div>
         <h2 class="title">Things I've built</h2>
-        <p class="subtitle">From production web apps to data analysis and test automation.</p>
+        <p class="subtitle">From systems I use in my own business to data analysis, case competitions and test automation.</p>
       </div>
       <div class="filters reveal" role="tablist">
         <button class="filter on" data-f="all">All</button>
         <button class="filter" data-f="dev">Development</button>
-        <button class="filter" data-f="data">Data &amp; Business</button>
+        <button class="filter" data-f="data">Data</button>
+        <button class="filter" data-f="biz">Business</button>
         <button class="filter" data-f="test">Testing</button>
         <button class="filter" data-f="hw">Hardware</button>
       </div>
       <div class="projects">
-        <article class="p-card featured reveal" data-cat="dev data">
+        <article class="p-card featured reveal" data-cat="dev biz">
           <div class="p-visual">
             <div class="mock" aria-hidden="true">
               <div class="mock-top"><i></i><i></i><i></i></div>
               <div class="mock-kpis">
-                <div class="mock-kpi"><small>Daily sales</small><div style="width:80%"></div></div>
-                <div class="mock-kpi"><small>Margin</small><div style="width:55%"></div></div>
-                <div class="mock-kpi"><small>Orders</small><div style="width:68%"></div></div>
+                <div class="mock-kpi"><small>Shopee</small><div style="width:80%"></div></div>
+                <div class="mock-kpi"><small>Lazada</small><div style="width:55%"></div></div>
+                <div class="mock-kpi"><small>TikTok Shop</small><div style="width:68%"></div></div>
               </div>
               <div class="mock-bars">
                 <span style="height:40%"></span><span style="height:62%;animation-delay:.1s"></span><span style="height:48%;animation-delay:.2s"></span><span style="height:80%;animation-delay:.3s"></span><span style="height:58%;animation-delay:.4s"></span><span style="height:92%;animation-delay:.5s"></span><span style="height:70%;animation-delay:.6s"></span>
@@ -501,29 +518,67 @@
             </div>
           </div>
           <div class="p-body">
-            <div class="p-kicker"><span class="cat">Featured · Full-stack</span><span class="private"><svg><use href="#i-lock"/></svg>Private repo</span></div>
+            <div class="p-kicker"><span class="cat">Featured · My business</span><span class="private"><svg><use href="#i-lock"/></svg>Private repo</span></div>
             <h3>MTMS: Management &amp; Trading System</h3>
-            <p>A web system for an auto-parts business that sells on several e-commerce platforms. I grew it from a Streamlit prototype into a full web app built for daily operations.</p>
+            <p>The in-house system behind my online motorcycle parts store. It grew from a Streamlit prototype into a full web app.</p>
             <ul>
-              <li>Daily sales reports generated from platform exports</li>
+              <li>Merges orders from Shopee, Lazada and TikTok Shop into daily order and shipping reports</li>
               <li>Price management across cost, platform fees and wholesale margins</li>
               <li>PDF quotations, SKU management and delivery route planning</li>
-              <li>FastAPI backend on Render, React frontend on Vercel</li>
+              <li>FastAPI + PostgreSQL backend on Render, React frontend on Vercel</li>
             </ul>
-            <div class="p-foot"><div class="tags" style="margin:0"><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">pandas</span></div></div>
+            <div class="p-foot"><div class="tags" style="margin:0"><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">pandas</span></div></div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-cat="dev">
+          <div class="p-visual" style="background:linear-gradient(135deg,#78350f,#b45309)"><svg class="big-ico"><use href="#i-chat"/></svg></div>
+          <div class="p-body">
+            <div class="p-kicker"><span class="cat">Senior capstone · Jul 2026 – Present</span><span class="private"><svg><use href="#i-users"/></svg>Team</span></div>
+            <h3>Cocoa Supply Chain Databank</h3>
+            <ul>
+              <li>Adding a LINE OA AI chatbot (FastAPI, LiteLLM) so cocoa farmers can submit supply-chain data by chat</li>
+              <li>Manage the product backlog, data management and CI/CD across Next.js, Kotlin, Go and Flutter services</li>
+              <li>Preparing the team's pitch for the STEM Learning in Action Grant 2026</li>
+            </ul>
+            <div class="p-foot"><div class="tags" style="margin:0"><span class="tag">FastAPI</span><span class="tag">LiteLLM</span><span class="tag">LINE OA</span><span class="tag">CI/CD</span></div></div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-cat="data biz">
+          <div class="p-visual v2"><svg class="big-ico"><use href="#i-chart"/></svg></div>
+          <div class="p-body">
+            <div class="p-kicker"><span class="cat">Data analysis · Oct – Nov 2025</span></div>
+            <h3>E-commerce Sales Analysis</h3>
+            <p>Market basket analysis and SKU trend tracking in Python on my store's Lazada and TikTok Shop sales data, to find product bundles and shifts in demand. Results are shown in a Streamlit dashboard.</p>
+            <div class="p-foot">
+              <div class="tags" style="margin:0"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Market Basket</span><span class="tag">Streamlit</span></div>
+              <a class="p-link" href="https://github.com/Rirhcceez/Sales-Visualization" target="_blank" rel="noopener">Code <svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
 
         <article class="p-card reveal" data-cat="data">
-          <div class="p-visual v2"><svg class="big-ico"><use href="#i-chart"/></svg></div>
+          <div class="p-visual" style="background:linear-gradient(135deg,#0c4a6e,#0ea5e9)"><svg class="big-ico"><use href="#i-map"/></svg></div>
           <div class="p-body">
-            <div class="p-kicker"><span class="cat">Data analysis</span></div>
-            <h3>Sales Visualization</h3>
-            <p>Exploring and visualizing sales data to find trends and support business decisions, with an interactive Streamlit dashboard.</p>
-            <div class="p-foot">
-              <div class="tags" style="margin:0"><span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">Streamlit</span></div>
-              <a class="p-link" href="https://github.com/Rirhcceez/Sales-Visualization" target="_blank" rel="noopener">Code <svg><use href="#i-arrow"/></svg></a>
-            </div>
+            <div class="p-kicker"><span class="cat">Data analysis · Oct – Dec 2025</span></div>
+            <h3>Bangkok Flood Risk Forecasting</h3>
+            <ul>
+              <li>Analyzed three years (2022–2024) of Bangkok Traffy Fondue complaints: report trends, tag frequency and seasonal flood peaks</li>
+              <li>Found that roads, drains and canals are the issues reported most often with flooding, and measured how long flood reports take to resolve</li>
+              <li>Mapped flood reports by subdistrict with choropleth maps and time-series heatmaps; the notebooks became the Data Insight page of the team's Streamlit dashboard</li>
+            </ul>
+            <div class="p-foot"><div class="tags" style="margin:0"><span class="tag">Jupyter</span><span class="tag">GeoPandas</span><span class="tag">Folium</span><span class="tag">Streamlit</span></div></div>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-cat="biz">
+          <div class="p-visual" style="background:linear-gradient(135deg,#14532d,#22c55e)"><svg class="big-ico"><use href="#i-coins"/></svg></div>
+          <div class="p-body">
+            <div class="p-kicker"><span class="cat">Case competition · 2026</span></div>
+            <h3>TACC 2026: SCGJWD</h3>
+            <p>Thailand Accounting Case Competition. Assessed SCGJWD's financial performance and logistics strategy through financial statement analysis.</p>
+            <div class="p-foot"><div class="tags" style="margin:0"><span class="tag">Financial Statement Analysis</span><span class="tag">Business Case</span></div></div>
           </div>
         </article>
 
@@ -536,19 +591,6 @@
             <div class="p-foot">
               <div class="tags" style="margin:0"><span class="tag">Playwright</span><span class="tag">Robot Framework</span><span class="tag">Bruno</span></div>
               <a class="p-link" href="https://github.com/Rirhcceez/Software_Practice-Playwright_Assignment" target="_blank" rel="noopener">Code <svg><use href="#i-arrow"/></svg></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="p-card reveal" data-cat="dev">
-          <div class="p-visual" style="background:linear-gradient(135deg,#1e293b,#475569)"><svg class="big-ico"><use href="#i-github"/></svg></div>
-          <div class="p-body">
-            <div class="p-kicker"><span class="cat">DevOps</span></div>
-            <h3>GitHub Actions Practice</h3>
-            <p>Practice repo for learning CI/CD with GitHub Actions workflows.</p>
-            <div class="p-foot">
-              <div class="tags" style="margin:0"><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span></div>
-              <a class="p-link" href="https://github.com/Rirhcceez/GitHubActionPractice" target="_blank" rel="noopener">Code <svg><use href="#i-arrow"/></svg></a>
             </div>
           </div>
         </article>
@@ -578,23 +620,56 @@
       </div>
       <div class="skills">
         <div class="s-card reveal">
-          <h3><span class="ico"><svg><use href="#i-code"/></svg></span>Engineering</h3>
-          <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Tailwind CSS</span><span class="chip">REST APIs</span><span class="chip">C</span></div>
+          <h3><span class="ico"><svg><use href="#i-chart"/></svg></span>Data &amp; Analytics</h3>
+          <div class="chips"><span class="chip">Python (pandas)</span><span class="chip">SQL / PostgreSQL</span><span class="chip">Tableau</span><span class="chip">Regression</span><span class="chip">Correlation Analysis</span><span class="chip">Market Basket Analysis</span><span class="chip">Clustering</span><span class="chip">Machine Learning</span><span class="chip">NLP</span><span class="chip">GeoPandas</span><span class="chip">Folium</span></div>
         </div>
         <div class="s-card reveal">
-          <h3><span class="ico"><svg><use href="#i-chart"/></svg></span>Data &amp; Business</h3>
-          <div class="chips"><span class="chip">Tableau</span><span class="chip">pandas</span><span class="chip">Streamlit</span><span class="chip">Jupyter</span><span class="chip">Excel</span><span class="chip">Data Visualization</span><span class="chip">Clustering</span><span class="chip">Business Analysis</span><span class="chip">Market Research</span><span class="chip">Requirements</span></div>
+          <h3><span class="ico"><svg><use href="#i-brief"/></svg></span>Business</h3>
+          <div class="chips"><span class="chip">Requirement Gathering</span><span class="chip">Business Case Analysis</span><span class="chip">Financial Statement Analysis</span><span class="chip">Market Research</span><span class="chip">Presentation</span><span class="chip">E-commerce</span><span class="chip">Shopee</span><span class="chip">Lazada</span><span class="chip">TikTok Shop</span></div>
+        </div>
+        <div class="s-card reveal">
+          <h3><span class="ico"><svg><use href="#i-code"/></svg></span>Development</h3>
+          <div class="chips"><span class="chip">FastAPI</span><span class="chip">Streamlit</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Express.js</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">LINE Messaging API</span><span class="chip">LiteLLM</span><span class="chip">C</span></div>
         </div>
         <div class="s-card reveal">
           <h3><span class="ico"><svg><use href="#i-tool"/></svg></span>Quality &amp; Tools</h3>
-          <div class="chips"><span class="chip">Playwright</span><span class="chip">Robot Framework</span><span class="chip">Bruno</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">Render</span><span class="chip">Vercel</span><span class="chip">VS Code</span></div>
+          <div class="chips"><span class="chip">Playwright</span><span class="chip">Robot Framework</span><span class="chip">Bruno</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">Render</span><span class="chip">Vercel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section class="block" id="activities">
+    <div class="container">
+      <div class="head reveal">
+        <div class="eyebrow">Leadership &amp; Activities</div>
+        <h2 class="title">Beyond the classroom</h2>
+      </div>
+      <div class="acts">
+        <div class="s-card reveal">
+          <h3><span class="ico"><svg><use href="#i-trophy"/></svg></span>Case competitions</h3>
+          <ul class="act-list">
+            <li><b>Shopee Case Competition 2026</b><span>Participant</span></li>
+            <li><b>Thailand Accounting Case Competition (TACC) 2026</b><span>Participant</span></li>
+          </ul>
+        </div>
+        <div class="s-card reveal">
+          <h3><span class="ico"><svg><use href="#i-users"/></svg></span>Leadership &amp; staff</h3>
+          <ul class="act-list">
+            <li><b>ICPC Asia Bangkok Regional Contest 2025</b><span>Head of Welfare</span></li>
+            <li><b>CEDT Guild Building 2025</b><span>Guild Master</span></li>
+            <li><b>CEDT Innovation Summit 2025</b><span>Head of Welfare</span></li>
+            <li><b>CEDT Ovenbreak 2025</b><span>Welfare Staff</span></li>
+            <li><b>Intania Games 2024</b><span>Coordinator</span></li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section class="block" id="education" style="padding-bottom:40px">
+  <section class="block alt" id="education" style="padding:70px 0">
     <div class="container">
       <div class="head reveal" style="margin-bottom:32px">
         <div class="eyebrow">Education</div>
@@ -604,7 +679,7 @@
         <div>
           <h3>Chulalongkorn University</h3>
           <div class="deg">B.Eng. Computer Engineering and Digital Technology (CEDT)</div>
-          <p>2024 – Present · Faculty of Engineering, Bangkok</p>
+          <p>2024 – Present · Third-year student · Faculty of Engineering, Bangkok</p>
         </div>
       </div>
     </div>
@@ -673,7 +748,7 @@
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   // Typing roles
-  const roles = ["Full-stack Developer", "Business Analyst", "Data Analyst", "Problem Solver"];
+  const roles = ["Full-stack Developer", "Data Analyst", "Business Analyst", "E-commerce Owner"];
   const typed = document.getElementById("typed");
   if (reduce) { typed.textContent = roles[0]; }
   else {
@@ -693,13 +768,13 @@
   const lines = [
     ['<span class="cm"># hello, world</span>'],
     ['<span class="k">name</span>: <span class="s">Patcharapon Srisuwan</span>'],
-    ['<span class="k">school</span>: <span class="s">Chulalongkorn University</span>'],
-    ['<span class="k">program</span>: <span class="s">CEDT</span>'],
+    ['<span class="k">school</span>: <span class="s">Chulalongkorn University (CEDT, Year 3)</span>'],
+    ['<span class="k">business</span>: <span class="s">Owner, online motorcycle parts store</span>'],
     ['<span class="k">experience</span>:'],
     ['  - <span class="s">Data Analyst @ Bank of Thailand</span>'],
     ['  - <span class="s">Business Analyst @ The Red Carbon</span>'],
-    ['<span class="k">stack</span>: [<span class="s">FastAPI</span>, <span class="s">React</span>, <span class="s">PostgreSQL</span>]'],
-    ['<span class="k">focus</span>: <span class="s">dev × business</span>'],
+    ['<span class="k">stack</span>: [<span class="s">FastAPI</span>, <span class="s">PostgreSQL</span>, <span class="s">React</span>, <span class="s">pandas</span>]'],
+    ['<span class="k">focus</span>: <span class="s">dev × data × business</span>'],
     ['<span class="k">open_to_work</span>: <span class="n">true</span>']
   ];
   const code = document.getElementById("code");
